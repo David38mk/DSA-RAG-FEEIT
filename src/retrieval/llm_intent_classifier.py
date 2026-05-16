@@ -29,15 +29,15 @@ class LLMIntentClassifier:
     - Non-deterministic (small variations)
     """
     
-    def __init__(self, model_name: str = "llama-3.3-70b-versatile", api_key: str = None):
+    def __init__(self, model_name: str = "llama-3.1-8b-instant", api_key: str = None):
         """
         Initialize LLM classifier.
 
         Args:
-            model_name: Groq model to use. Default is the small/fast 8B model —
-                a binary intent classification doesn't need a 70B model, and
-                using the same heavyweight model as the generator doubles the
-                per-query 70B call count, which hits free-tier rate limits hard.
+            model_name: Groq model to use. Intentionally the 8B model —
+                binary TECHNICAL/SUPPORT classification doesn't need 70B,
+                and using 70B here doubles the heavyweight call count per query,
+                burning the free-tier 100K daily token cap twice as fast.
             api_key: Groq API key (or from GROQ_API_KEY env)
         """
         self.model_name = model_name

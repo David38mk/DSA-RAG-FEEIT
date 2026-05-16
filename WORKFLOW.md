@@ -347,6 +347,13 @@ The thesis Limitations section should note this honestly: no automated regressio
 
 ## What's next (not yet built)
 
+**LLM intent classifier switched from 70B → 8B (2026-05-16).**
+`LLMIntentClassifier` defaulted to `llama-3.3-70b-versatile` despite a docstring that said it should use the small/fast model. This meant every query routed through the LLM fallback (confidence < 0.8) made *two* 70B Groq calls — one for routing, one for generation — burning the free-tier 100K daily token cap roughly twice as fast. Fixed in `src/retrieval/llm_intent_classifier.py` line 32: default `model_name` changed to `llama-3.1-8b-instant`.
+
+- **Token budget impact:** 8B routing call costs ~350 tokens (short classification prompt + 300-token JSON response) vs ~600+ for 70B. Combined with the generation call at ≤6,500 tokens, worst-case per-query cost drops from ~7,100 → ~6,850 tokens. More importantly, the 8B model runs on a separate rate-limit bucket from the 70B generator, so both calls can proceed in parallel without contention on the same TPM cap.
+- **Quality impact:** The routing eval (2026-05-16) scored LLM routing at **100% accuracy** — binary TECHNICAL/SUPPORT is trivially easy and the 8B model is more than sufficient.
+- **Where:** `src/retrieval/llm_intent_classifier.py`, `__init__` default parameter. The retriever instantiates it with no arguments (`LLMIntentClassifier()`), so changing the default is enough.
+
 - **Provider comparison re-run with unified prompts.** First run (`2026-05-16_204857`) used inconsistent prompts per provider — quality scores are not fully comparable. Re-run with fresh daily quota now that all generators share the same prompt. This gives the valid cross-provider latency + quality table for §5.5b.
 - **Test-set expansion.** 9 queries is small. Target ~30 with more administrative and cross-lingual cases to reduce result variance.
 - **Automated regression suite.** Run the routing + baseline + judge scripts on every change, fail loudly on regressions.
