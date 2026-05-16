@@ -1,9 +1,25 @@
-langchain
+# Core retrieval
 chromadb
 sentence-transformers
-fastapi
-streamlit
-langdetect
+
+# Document parsing
 pypdf
+python-docx
 python-pptx
+langdetect
+
+# LLM providers
+groq
+google-genai
+openai
+
+# UI
+streamlit
+
+# Web framework (optional API layer)
+fastapi
+uvicorn
+
+# Utilities
+numpy
 ollama

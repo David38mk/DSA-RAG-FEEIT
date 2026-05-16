@@ -1,0 +1,78 @@
+{
+  "version": "1.0",
+  "description": "Routing + retrieval + answer-quality test set for DSA-RAG-FEEIT. Lifted from src/evaluation/evaluation_framework.py:create_test_set().",
+  "test_cases": [
+    {
+      "id": "tech-mk-001",
+      "query": "Објасни AVL дрва",
+      "intent": "technical",
+      "language": "mk",
+      "expected_sources": ["AVL", "дрва", "балансирано"],
+      "expected_topics": ["ротација", "баланс", "височина"]
+    },
+    {
+      "id": "tech-mk-002",
+      "query": "Што е временска комплексност?",
+      "intent": "technical",
+      "language": "mk",
+      "expected_sources": ["комплексност", "Big O"],
+      "expected_topics": ["O(n)", "време", "анализа"]
+    },
+    {
+      "id": "tech-mk-003",
+      "query": "Објасни quicksort алгоритам",
+      "intent": "technical",
+      "language": "mk",
+      "expected_sources": ["quicksort", "sorting"],
+      "expected_topics": ["pivot", "партиција", "рекурзија"]
+    },
+    {
+      "id": "tech-en-001",
+      "query": "Explain binary search trees",
+      "intent": "technical",
+      "language": "en",
+      "expected_sources": ["binary", "search", "tree", "BST"],
+      "expected_topics": ["node", "left", "right", "search"]
+    },
+    {
+      "id": "tech-en-002",
+      "query": "What is Big O notation?",
+      "intent": "technical",
+      "language": "en",
+      "expected_sources": ["complexity", "Big O", "notation"],
+      "expected_topics": ["time", "O(n)", "analysis"]
+    },
+    {
+      "id": "admin-mk-001",
+      "query": "Колку поени треба за полагање?",
+      "intent": "administrative",
+      "language": "mk",
+      "expected_sources": ["поени", "полагање", "услов"],
+      "expected_topics": ["50", "испит", "положен"]
+    },
+    {
+      "id": "faq-mk-001",
+      "query": "Дали треба да носам лаптоп на лаб?",
+      "intent": "faq",
+      "language": "mk",
+      "expected_sources": ["лаб", "вежби"],
+      "expected_topics": ["лаптоп", "компјутер"]
+    },
+    {
+      "id": "tech-en-003",
+      "query": "binary search complexity",
+      "intent": "technical",
+      "language": "en",
+      "expected_sources": ["binary", "search", "complexity"],
+      "expected_topics": ["O(log n)", "logarithmic"]
+    },
+    {
+      "id": "tech-mk-004",
+      "query": "hash табели објаснување",
+      "intent": "technical",
+      "language": "mk",
+      "expected_sources": ["hash", "табела"],
+      "expected_topics": ["collision", "функција", "key"]
+    }
+  ]
+}

@@ -1,0 +1,191 @@
+{
+  "timestamp": "2026-05-15_154927",
+  "source_baseline_result": "2026-05-15_153638_baseline_comparison.json",
+  "aggregated": {
+    "judge_model": "llama-3.1-8b-instant",
+    "seed": 42,
+    "n_queries": 9,
+    "rag_wins": 6,
+    "baseline_wins": 3,
+    "ties": 0,
+    "rag_win_rate": 0.6666666666666666,
+    "baseline_win_rate": 0.3333333333333333,
+    "rag_avg_accuracy": 4.222222222222222,
+    "baseline_avg_accuracy": 3.4444444444444446,
+    "rag_hallucinations": 2,
+    "baseline_hallucinations": 6
+  },
+  "judgments": [
+    {
+      "id": "tech-mk-001",
+      "query": "Објасни AVL дрва",
+      "language": "mk",
+      "intent": "technical",
+      "a_label": "baseline",
+      "b_label": "rag",
+      "winner": "rag",
+      "verdict": {
+        "winner": "B",
+        "reasoning": "Answer B provides a more accurate and concise explanation of AVL trees, while Answer A contains some inaccuracies and unnecessary details.",
+        "accuracy_a": 3,
+        "accuracy_b": 5,
+        "uses_sources_a": false,
+        "uses_sources_b": true,
+        "hallucinates_a": true,
+        "hallucinates_b": false
+      }
+    },
+    {
+      "id": "tech-mk-002",
+      "query": "Што е временска комплексност?",
+      "language": "mk",
+      "intent": "technical",
+      "a_label": "rag",
+      "b_label": "baseline",
+      "winner": "baseline",
+      "verdict": {
+        "winner": "B",
+        "reasoning": "Answer B provides a more accurate and detailed explanation of time complexity, including its definition, importance, and common examples.",
+        "accuracy_a": 3,
+        "accuracy_b": 5,
+        "uses_sources_a": true,
+        "uses_sources_b": true,
+        "hallucinates_a": false,
+        "hallucinates_b": false
+      }
+    },
+    {
+      "id": "tech-mk-003",
+      "query": "Објасни quicksort алгоритам",
+      "language": "mk",
+      "intent": "technical",
+      "a_label": "rag",
+      "b_label": "baseline",
+      "winner": "rag",
+      "verdict": {
+        "winner": "A",
+        "reasoning": "Answer A provides a clear and concise explanation of the quicksort algorithm, accurately describing its steps and time complexity. Answer B provides a good overview of the algorithm, but lacks clarity and accuracy in its explanation.",
+        "accuracy_a": 5,
+        "accuracy_b": 3,
+        "uses_sources_a": true,
+        "uses_sources_b": false,
+        "hallucinates_a": false,
+        "hallucinates_b": true
+      }
+    },
+    {
+      "id": "tech-en-001",
+      "query": "Explain binary search trees",
+      "language": "en",
+      "intent": "technical",
+      "a_label": "rag",
+      "b_label": "baseline",
+      "winner": "rag",
+      "verdict": {
+        "winner": "A",
+        "reasoning": "Answer A accurately describes the properties and operations of binary search trees, while Answer B contains inaccuracies and invented facts.",
+        "accuracy_a": 5,
+        "accuracy_b": 2,
+        "uses_sources_a": true,
+        "uses_sources_b": false,
+        "hallucinates_a": false,
+        "hallucinates_b": true
+      }
+    },
+    {
+      "id": "tech-en-002",
+      "query": "What is Big O notation?",
+      "language": "en",
+      "intent": "technical",
+      "a_label": "baseline",
+      "b_label": "rag",
+      "winner": "baseline",
+      "verdict": {
+        "winner": "A",
+        "reasoning": "Answer A provides a more comprehensive and accurate explanation of Big O notation, including its formal definition, common examples, and best practices.",
+        "accuracy_a": 5,
+        "accuracy_b": 3,
+        "uses_sources_a": true,
+        "uses_sources_b": false,
+        "hallucinates_a": false,
+        "hallucinates_b": true
+      }
+    },
+    {
+      "id": "admin-mk-001",
+      "query": "Колку поени треба за полагање?",
+      "language": "mk",
+      "intent": "administrative",
+      "a_label": "baseline",
+      "b_label": "rag",
+      "winner": "rag",
+      "verdict": {
+        "winner": "B",
+        "reasoning": "Answer B accurately describes the passing criteria for the course, while Answer A provides vague and potentially misleading information.",
+        "accuracy_a": 2,
+        "accuracy_b": 5,
+        "uses_sources_a": false,
+        "uses_sources_b": true,
+        "hallucinates_a": true,
+        "hallucinates_b": false
+      }
+    },
+    {
+      "id": "faq-mk-001",
+      "query": "Дали треба да носам лаптоп на лаб?",
+      "language": "mk",
+      "intent": "faq",
+      "a_label": "baseline",
+      "b_label": "rag",
+      "winner": "baseline",
+      "verdict": {
+        "winner": "A",
+        "reasoning": "Answer A accurately states that it is recommended to bring a laptop to lab sessions, which is consistent with the course materials.",
+        "accuracy_a": 5,
+        "accuracy_b": 2,
+        "uses_sources_a": false,
+        "uses_sources_b": false,
+        "hallucinates_a": false,
+        "hallucinates_b": true
+      }
+    },
+    {
+      "id": "tech-en-003",
+      "query": "binary search complexity",
+      "language": "en",
+      "intent": "technical",
+      "a_label": "rag",
+      "b_label": "baseline",
+      "winner": "rag",
+      "verdict": {
+        "winner": "A",
+        "reasoning": "Answer A accurately describes the time complexity of binary search as O(logn) based on the course materials.",
+        "accuracy_a": 5,
+        "accuracy_b": 4,
+        "uses_sources_a": true,
+        "uses_sources_b": false,
+        "hallucinates_a": false,
+        "hallucinates_b": true
+      }
+    },
+    {
+      "id": "tech-mk-004",
+      "query": "hash табели објаснување",
+      "language": "mk",
+      "intent": "technical",
+      "a_label": "rag",
+      "b_label": "baseline",
+      "winner": "rag",
+      "verdict": {
+        "winner": "A",
+        "reasoning": "Answer A provides a more accurate and detailed explanation of hash tables, while Answer B contains inaccuracies and invented facts.",
+        "accuracy_a": 5,
+        "accuracy_b": 2,
+        "uses_sources_a": true,
+        "uses_sources_b": false,
+        "hallucinates_a": false,
+        "hallucinates_b": true
+      }
+    }
+  ]
+}

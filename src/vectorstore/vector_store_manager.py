@@ -62,7 +62,7 @@ class VectorStoreManager:
         """Load the embedding model"""
         try:
             from sentence_transformers import SentenceTransformer
-            self.embedding_model = SentenceTransformer(self.embedding_model_name)
+            self.embedding_model = SentenceTransformer(self.embedding_model_name, device="cpu")
             print(f"✓ Loaded {self.embedding_model_name}")
         except ImportError:
             print("❌ sentence-transformers not installed")

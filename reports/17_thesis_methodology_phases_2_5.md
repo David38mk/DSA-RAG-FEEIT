@@ -1013,7 +1013,7 @@ The RAG system consists of five sequential phases: ingestion,
 chunking, vectorization, retrieval, and generation.
 
 3.2 Data Ingestion (Phase 1)
-[Use content from THESIS_DOCS_PHASE1.md]
+[Use content from 02_phase1_thesis_methodology.md]
 
 3.3 Smart Chunking (Phase 2)
 Documents undergo type-specific chunking to preserve semantic

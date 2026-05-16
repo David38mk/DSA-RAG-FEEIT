@@ -1,0 +1,207 @@
+{
+  "timestamp": "2026-05-15_153638",
+  "model": "llama-3.3-70b-versatile",
+  "test_set_size": 9,
+  "aggregated": {
+    "n_queries": 9,
+    "rag_avg_quality": 0.7074074074074074,
+    "baseline_avg_quality": 0.7166666666666667,
+    "rag_avg_latency_ms": 37391.11111111111,
+    "baseline_avg_latency_ms": 2615.5555555555557,
+    "rag_wins": 3,
+    "baseline_wins": 3,
+    "ties": 3,
+    "rag_win_rate": 0.3333333333333333
+  },
+  "per_query": [
+    {
+      "id": "tech-mk-001",
+      "query": "Објасни AVL дрва",
+      "language": "mk",
+      "intent": "technical",
+      "rag": {
+        "answer": "Извор: [PSAA] #06 - AVL_i_Red_Black_Drva (optional).pdf\n\nAVL дрвата се бинарни пребарувачки дрва со услов за балансирање. Условот за балансирање е дека левото и десното поддрво на секој јазол треба да имаат висина која се разликува најмногу за 1.\n\nВисината на празно дрво е -1, а висината на секој јазол се чува во јазолот. Трите операции (пребарување, вметнување и бришење) се вршат за O(log n).\n\nAVL дрвата се користат за да се обезбеди дека висината на дрвото остане релативно мала, што резултира со брзи операции за пребарување, вметнување и бришење.\n\nВо AVL дрвата, кога се вметнува нов елемент, дрвото може да се наруши, па затоа е потребно да се изврши ротација за да се врати балансот на дрвото. Постојат два типа на ротации: единечна ротација и двојна ротација.\n\nЕдинечна ротација се користи кога елементот е вметнат во левото поддрво на левото дете на јазолот кој го нарушува балансот, или кога елементот е вметнат во десното поддрво на десното дете на јазолот кој го нарушува балансот.\n\nДвојна ротација се користи кога елементот е вметнат во десното поддрво на левото дете на јазолот кој го нарушува балансот, или кога елементот е вметнат во левото поддрво на десното дете на ј",
+        "quality_score": 0.7333333333333334,
+        "topic_coverage": 0.6666666666666666,
+        "is_uncertain": false,
+        "latency_ms": 3357
+      },
+      "baseline": {
+        "answer": "АВЛ дрва (Автоматско Балансирано Дрво) се еден вид на самобалансирачко двојно поврзано дрво, кое е развиено од советските научници Г.М. Адельсон-Велски и Е.М. Ландис во 1962 година. Овие дрва се користат за да се обезбеди ефикасна пребарување, вметнување и бришење на елементи во една структура на податоци.\n\n**Карактеристики на АВЛ дрва:**\n\n1. **Балансираност**: АВЛ дрва се балансираат автоматски после секоја операција на вметнување или бришење, што значи дека висината на дрвото останува релативно константна.\n2. **Двојно поврзано**: Секој јазол во АВЛ дрвото има две деца (лево и десно дете) и еден татко (родителски јазол).\n3. **Сортирано**: Елементите во АВЛ дрвото се сортирани во искачувачки редослед, што значи дека сите елементи во левото поддрво на еден јазол се помали од елементот во јазолот, а сите елементи во десното поддрво се поголеми.\n\n**Балансираност на АВЛ дрва:**\n\nБалансираноста на АВЛ дрва се обезбедува со следните правила:\n\n1. **Фактор на балансираност**: Секој јазол во АВЛ дрвото има фактор на балансираност, кој е дефиниран како разлика помеѓу висината на левото и десното поддрво.\n2. **Балансираност на јазол**: Јазолот е балансиран ако факторот на балансираност е -1, 0 или",
+        "quality_score": 0.5666666666666667,
+        "topic_coverage": 0.3333333333333333,
+        "is_uncertain": false,
+        "latency_ms": 5456
+      },
+      "delta_quality": 0.16666666666666674
+    },
+    {
+      "id": "tech-mk-002",
+      "query": "Што е временска комплексност?",
+      "language": "mk",
+      "intent": "technical",
+      "rag": {
+        "answer": "Временска комплексност се однесува на времето кое е потребно за извршување на алгоритамот. Таа е мерка за брзината на извршување на алгоритмот и се изразува како функција од големината на влезните податоци.\n\nИзвор: [Извор 3: [PSAA] #02 - Analiza na algoritmi.pdf]\n\nВо документот се вели: \"Комплексноста на алгоритмот е одраз на неговото трошење на клучниот ресурс - времето на извршување!\" и \"Значи, за обем на влезниот параметар n комплексноста на алгоритмот е некаква функција f(n) која го дава времето на извршување (running time).\"\n\nИсто така, во документот се објаснува дека временска комплексност може да се определува во три случаи: најдобар случај (best case), најлошиот случај (worst case) и просечен случај (average case).\n\nИзвор: [Извор 10: [PSAA] #02 - Analiza na algoritmi.pdf]\n\nВо документот се вели: \"Комплексноста f(n) се дефинира во три случаи: best case - fMIN [чекори] во зависност од n, worst case - fMAX [чекори] во зависност од n, average case - fAVG [чекори] во зависност од n, вообичаено очекуваната вредност за f(n)\"",
+        "quality_score": 0.5666666666666667,
+        "topic_coverage": 0.3333333333333333,
+        "is_uncertain": false,
+        "latency_ms": 40213
+      },
+      "baseline": {
+        "answer": "Временската комплексност е мерка за времето потребно за извршување на алгоритам во однос на големината на влезните податоци. Таа се изразува како функција од големината на влезните податоци, обично означена со буквата n.\n\nВременската комплексност е важен фактор при оценувањето на ефикасноста на алгоритамот, бидејќи таа ни дава информација за тоа колку време ќе треба да чекаме за да добијеме резултат од алгоритамот.\n\nОбично, временската комплексност се изразува во нотација на Големо О (O), која го означува најгорниот лимит на времето потребно за извршување на алгоритамот. На пример, ако алгоритамот има временска комплексност O(n), тоа значи дека времето потребно за извршување на алгоритамот расте линеарно со големината на влезните податоци.\n\nНекои чести примери на временска комплексност се:\n\n* O(1) - константно време, кое значи дека алгоритамот извршува во исто време независно од големината на влезните податоци\n* O(log n) - логаритамско време, кое значи дека алгоритамот извршува во време пропорционално со логаритамот на големината на влезните податоци\n* O(n) - линеарно време, кое значи дека алгоритамот извршува во време пропорционално со големината на влезните податоци\n* O(n log n) - линеарно-логаритамско време, кое значи дека алгоритамот извршува во време пропорционал",
+        "quality_score": 0.7333333333333334,
+        "topic_coverage": 0.6666666666666666,
+        "is_uncertain": false,
+        "latency_ms": 4046
+      },
+      "delta_quality": -0.16666666666666674
+    },
+    {
+      "id": "tech-mk-003",
+      "query": "Објасни quicksort алгоритам",
+      "language": "mk",
+      "intent": "technical",
+      "rag": {
+        "answer": "Quicksort е еден од најбрзите и најефикасни сортирачки алгоритми. Тој е рекурзивен алгоритам кој работи на принципот на делење и владеење.\n\nОсновните чекори на quicksort алгоритмот се:\n\n1. Избери еден елемент од низата како пивот (pivot).\n2. Подели ја низата на две поднизи: една со елементи помали од пивотот и една со елементи поголеми од пивотот.\n3. Рекурзивно примени quicksort алгоритмот на двете поднизи.\n4. Обедини ги резултатите од двете поднизи и пивотот за да добиеш сортирана низа.\n\nQuicksort алгоритмот има просечна временска сложеност од O(n log n), што значи дека е многу брз за големи податоци.\n\nИзвор: [Извор 4: Data-Structures-and-Algorithms-in-Java-6th-Edition.pdf], стр. 549-553.\n\nПример на quicksort алгоритам во Java:\n```java\npublic static <K> void quickSort(Queue<K> S, Comparator<K> comp) {\n    int n = S.size();\n    if (n < 2) return; // queue is trivially sorted\n    K pivot = S.first(); // using first as arbitrary pivot\n    Queue<K> L = new LinkedQueue<>();\n    Queue<K> E = new LinkedQueue<>();\n    Queue<K> G = new LinkedQueue<>();\n    while (!S.isEmpty()) { // divide original into L, E, and G\n        K element = S.dequeue();\n        int c = comp.compare(element, pivot);\n        if (c < 0) // element is less than pivot\n            L.enqueue(element);\n        else if (c == 0) // element is equal to pivot\n            E.enqueue(element);\n        else // element is greater than pivot\n            G.enqueue(element);\n    }\n    // conquer\n    quickSort(L, comp); // sort elements less than pivot\n    quickSort(G, comp); // sort elements greater than pivot\n    // concatenate results\n    while (!",
+        "quality_score": 0.5666666666666667,
+        "topic_coverage": 0.3333333333333333,
+        "is_uncertain": false,
+        "latency_ms": 44386
+      },
+      "baseline": {
+        "answer": "Quicksort е еден од најпопуларните и ефикасни алгоритми за сортирање на податоци. Тој е дел од групата на алгоритми за сортирање со делба и освојување (divide and conquer).\n\n**Основна идеја**\n\nQuicksort работи на следниот начин:\n\n1. Изберете еден елемент од низата како \"пивот\" (pivot).\n2. Поделете ја низата на две поднизи: една со елементи кои се помали од пивотот и една со елементи кои се поголеми од пивотот.\n3. Рекурзивно применете истата процедура на двете поднизи.\n4. На крајот, комбинирајте ги резултатите од двете поднизи и пивотот за да добиете сортирана низа.\n\n**Детали**\n\nЕден од начините да се имплементира quicksort е да се користи следниот алгоритам:\n\n1. Ако низата е празна или има само еден елемент, вратете ја низата (бидејќи веќе е сортирана).\n2. Изберете еден елемент од низата како пивот.\n3. Поделете ја низата на две поднизи: `лево` и `десно`. `лево` содржи сите елементи кои се помали од пивотот, а `десно` содржи сите елементи кои се поголеми од пивотот.\n4. Рекурзивно применете quicksort на `лево` и `десно`.\n5. Вратете го резултатот од спојувањето на `лево`, пивотот и `десно`.\n\n**Пример**\n\nДа речеме дека имаме низа `[5, 2, 8, 3, 1, 6, 4]`. Ако го избереме елементот",
+        "quality_score": 0.5666666666666667,
+        "topic_coverage": 0.3333333333333333,
+        "is_uncertain": false,
+        "latency_ms": 4432
+      },
+      "delta_quality": 0.0
+    },
+    {
+      "id": "tech-en-001",
+      "query": "Explain binary search trees",
+      "language": "en",
+      "intent": "technical",
+      "rag": {
+        "answer": "A binary search tree is a data structure in which each node has at most two children (i.e., left child and right child) and each node represents a key-value pair. The key properties of a binary search tree are:\n\n1. The keys in the left subtree of a node are less than the key in the node.\n2. The keys in the right subtree of a node are greater than the key in the node.\n\nThis ordering allows for efficient searching, inserting, and deleting of nodes in the tree. The tree can be traversed in a way that visits the nodes in ascending order of their keys, which is known as an inorder traversal.\n\nBinary search trees can be used to implement maps (or dictionaries) where the keys are ordered, and they provide an efficient way to search for a key in the map. The search operation in a binary search tree works by starting at the root node and comparing the search key with the key in the current node. If the search key is less than the current node's key, the search continues in the left subtree; if it's greater, the search continues in the right subtree. This process continues until the key is found or it's determined that the key is not in the tree.\n\nSource: Извор 1: Data-Structures-and-Algorithms-in-Java-6th-Edition.pdf, Извор 9: Data-Structures-and-Algorithms-in-Java-6th-Edition.pdf, Извор 11: Data-Structures-and-Algorithms-in-Java-6th-Edition.pdf \n\nNote: The provided information is based on the course materials and does not include any external knowledge.",
+        "quality_score": 0.8999999999999999,
+        "topic_coverage": 1.0,
+        "is_uncertain": false,
+        "latency_ms": 46938
+      },
+      "baseline": {
+        "answer": "**Binary Search Trees (BSTs)**\n================================\n\nA Binary Search Tree (BST) is a data structure in which each node has at most two children (i.e., left child and right child) and each node represents a value. Each node in the tree has a comparable value, and for any given node, all elements in its left subtree are less than the node, and all elements in its right subtree are greater than the node.\n\n**Properties of BSTs**\n--------------------\n\n1.  **Each node has a unique value**: No two nodes in the tree have the same value.\n2.  **Left subtree property**: All values in the left subtree of a node are less than the node's value.\n3.  **Right subtree property**: All values in the right subtree of a node are greater than the node's value.\n4.  **For any node, all elements in its left subtree and right subtree must also follow the above rules**.\n\n**Operations on BSTs**\n---------------------\n\n### 1. Insertion\n\nTo insert a new value into a BST, we start at the root node and compare the new value with the current node's value. If the new value is less than the current node's value, we move to the left child. If the new value is greater, we move to the right child. We repeat this process until we find an empty spot to insert the new value.\n\n### 2. Deletion\n\nTo delete a value from a BST, we consider three cases:\n\n*   **Case 1: The node to be deleted has no children**. In this case, we simply remove the node.\n*   **Case 2: The node to be deleted has one child**. In this case, we replace the node with its child.\n*   **Case 3: The node to be deleted has two children**. In this case, we find the node's in-order successor (smallest node in the right subtree) or in-order predecessor (largest node in the left subtree), and replace the node with its in-order successor or predecessor.\n\n### 3. Search\n\nTo search for a value in a BST, we start at the root node and compare the target value with the current node's value. If the target value is less than the current node's value, we move to the left child. If the target value is greater, we move to the right child. We repeat this process until we find the target value or reach an empty spot.\n\n**Example Use Case",
+        "quality_score": 0.8999999999999999,
+        "topic_coverage": 1.0,
+        "is_uncertain": false,
+        "latency_ms": 1554
+      },
+      "delta_quality": 0.0
+    },
+    {
+      "id": "tech-en-002",
+      "query": "What is Big O notation?",
+      "language": "en",
+      "intent": "technical",
+      "rag": {
+        "answer": "Big O notation is a mathematical notation that describes the upper bound of an algorithm's complexity, i.e., the amount of time or space an algorithm requires as the size of the input increases. It is used to characterize the running time or space usage of an algorithm.\n\nAccording to the course materials (Извор 3: Data-Structures-and-Algorithms-in-Java-6th-Edition.pdf), Big O notation is defined as follows: \n\nLet f(n) and g(n) be functions mapping positive integers to positive real numbers. We say that f(n) is O(g(n)) if there is a real constant c > 0 and an integer constant n0 ≥ 1 such that f(n) ≤ c·g(n), for n ≥ n0.\n\nIn simpler terms, Big O notation gives an upper bound on the number of steps an algorithm takes to complete, relative to the size of the input. For example, an algorithm with a time complexity of O(n) will take longer to complete as the size of the input (n) increases, but the increase in time will be linear.\n\nSource: Извор 3: Data-Structures-and-Algorithms-in-Java-6th-Edition.pdf, Chapter 4.3 Asymptotic Analysis.",
+        "quality_score": 0.8999999999999999,
+        "topic_coverage": 1.0,
+        "is_uncertain": false,
+        "latency_ms": 56041
+      },
+      "baseline": {
+        "answer": "**Big O Notation: A Measure of Complexity**\n\nBig O notation is a mathematical notation that describes the complexity of an algorithm, which is the amount of time or space it requires as the size of the input increases. It's a way to measure the performance or efficiency of an algorithm.\n\n**Informal Definition:**\n\nBig O notation gives an upper bound on the number of steps an algorithm takes to complete, relative to the size of the input. It's usually expressed as a function of the input size, typically represented as 'n'.\n\n**Formal Definition:**\n\nGiven two functions f(n) and g(n), we say that f(n) is O(g(n)) if there exist positive constants c and n0 such that:\n\n0 ≤ f(n) ≤ c * g(n) for all n ≥ n0\n\nIn simpler terms, Big O notation measures the worst-case scenario of an algorithm's performance.\n\n**Common Examples:**\n\n* O(1) - Constant time complexity (accessing an array by index)\n* O(log n) - Logarithmic time complexity (binary search)\n* O(n) - Linear time complexity (finding an element in an array)\n* O(n log n) - Linearithmic time complexity (merging two sorted arrays)\n* O(n^2) - Quadratic time complexity (bubble sort)\n* O(2^n) - Exponential time complexity (recursive algorithms with no optimization)\n* O(n!) - Factorial time complexity (brute-force algorithms)\n\n**Why Big O Notation Matters:**\n\n1. **Predicting Performance:** Big O notation helps you predict how an algorithm will perform on large inputs.\n2. **Comparing Algorithms:** It allows you to compare the efficiency of different algorithms and choose the best one for a particular problem.\n3. **Identifying Bottlenecks:** By analyzing the Big O notation of an algorithm, you can identify potential bottlenecks and optimize them.\n\n**Best Practices:**\n\n1. **Analyze the Worst-Case Scenario:** Big O notation measures the worst-case scenario, so focus on the most complex part of the algorithm.\n2. **Ignore Lower-Order Terms:** When calculating Big O notation, ignore lower-order terms (e.g., constants, lower-degree polynomials).\n3. **Use Simplified Notation:** Use simplified notation, such as O(n) instead of O(2n) or O(n^2) instead of O(3n^2).\n\nBy understanding Big O notation, you'll be able to write more efficient algorithms",
+        "quality_score": 0.7333333333333334,
+        "topic_coverage": 0.6666666666666666,
+        "is_uncertain": false,
+        "latency_ms": 1605
+      },
+      "delta_quality": 0.16666666666666652
+    },
+    {
+      "id": "admin-mk-001",
+      "query": "Колку поени треба за полагање?",
+      "language": "mk",
+      "intent": "administrative",
+      "rag": {
+        "answer": "Извор: [Извор 3: Podatoci_za_predmetot.docx]\nЗа полагање на предметот потребно е да се освојат 50% или повеќе од вкупните поени. Конкретно, оценките се даваат според следниот критериум:\n- 0-49 проценти од поените – паднат (5)\n- 50-59 – положен (6)\n- 60-69 – положен (7)\n- 70-79 – положен (8)\n- 80-89 – положен (9)\n- 90-100 – положен (10)\n\nСпоред тоа, потребно е да се освојат барем 50% од вкупните поени за да се положи предметот.",
+        "quality_score": 0.8333333333333333,
+        "topic_coverage": 0.6666666666666666,
+        "is_uncertain": false,
+        "latency_ms": 22050
+      },
+      "baseline": {
+        "answer": "За полагање на испитот по Податочни Структури и Анализа на Алгоритми обично се бараат минимум 51 поен од вкупно 100 можни поени. Сепак, ова може да варира во зависност од институцијата и наставникот, па затоа е најдобро да се консултира со вашиот наставник или да проверите документите од курсот за да добиете точна информација.",
+        "quality_score": 0.6666666666666667,
+        "topic_coverage": 0.3333333333333333,
+        "is_uncertain": false,
+        "latency_ms": 711
+      },
+      "delta_quality": 0.16666666666666652
+    },
+    {
+      "id": "faq-mk-001",
+      "query": "Дали треба да носам лаптоп на лаб?",
+      "language": "mk",
+      "intent": "faq",
+      "rag": {
+        "answer": "Извор: [Извор 8: Често поставувани прашања.docx]\nПрашање: Почитувана професорке,\nБи сакал да прашам каков е начинот на полагање на испитот и дали е дозволено користење на одредени материјали или литература за време на решавањето?\nВи благодарам,\n\nОдговор: Поздрав,\nЗдраво,\nИспитот се полага во факултетската лабораторија. Материјалите кои ви се потребни ќе ви бидат достапни директно на курсот или во рамките на испитните задачи. Дополнителни материјали не се дозволени\nПоздрав,\n\nЗа лабораториските вежби не е споменато дали треба да носите лаптоп. Сепак, за испитот е споменато дека се полага во факултетската лабораторија, што имплицира дека лаптопите се достапни таму и не е неопходно да ги носите вашите. За лабораториските вежби не можем да дадеме одговор врз основа на достапната информација.",
+        "quality_score": 0.65,
+        "topic_coverage": 0.5,
+        "is_uncertain": false,
+        "latency_ms": 25169
+      },
+      "baseline": {
+        "answer": "Да, е препорачливо да носиш лаптоп на лабораториски часови за курсот Податочни Структури и Анализа на Алгоритми. Ова ќе ти овозможи да работиш на задачите и проектите директно на лаптопот, како и да имаш пристап до потребните ресурси и алатки за развој на софтвер.\n\nИсто така, лаптопот ќе ти овозможи да запишуваш белешки и да имаш пристап до материјалите за курсот, како што се презентации, кодови и други ресурси. Освен тоа, ако има задачи или проекти кои бараат работа на компјутер, лаптопот ќе ти биде неопходен за да можеш да работиш на нив.\n\nСепак, треба да провериш со вашиот предавач или асистент дали има специфични барања или препораки за лаптопите на лабораториски часови.",
+        "quality_score": 0.8999999999999999,
+        "topic_coverage": 1.0,
+        "is_uncertain": false,
+        "latency_ms": 2090
+      },
+      "delta_quality": -0.2499999999999999
+    },
+    {
+      "id": "tech-en-003",
+      "query": "binary search complexity",
+      "language": "en",
+      "intent": "technical",
+      "rag": {
+        "answer": "The time complexity of binary search is O(logn), where n is the number of elements in the sorted array.\n\nSource: Извор 1: Data-Structures-and-Algorithms-in-Java-6th-Edition.pdf, page 197. \n\nThis is because with each recursive call, the number of candidate elements is reduced by at least half, resulting in a logarithmic number of comparisons. \n\nSource: Извор 12: Data-Structures-and-Algorithms-in-Java-6th-Edition.pdf, page 196. \n\nIn the worst case, the number of recursive calls is equal to the smallest integer r such that n/2^r < 1, which is equivalent to r = log(n). \n\nSource: Извор 12: Data-Structures-and-Algorithms-in-Java-6th-Edition.pdf, page 204. \n\nTherefore, the time complexity of binary search is O(logn).",
+        "quality_score": 0.65,
+        "topic_coverage": 0.5,
+        "is_uncertain": false,
+        "latency_ms": 56660
+      },
+      "baseline": {
+        "answer": "**Binary Search Complexity**\n\nBinary search is an efficient algorithm for finding an item from a sorted list of items. It works by repeatedly dividing in half the portion of the list that could contain the item, until you've narrowed the possible locations to just one.\n\n**Time Complexity:**\n\nThe time complexity of binary search is **O(log n)**, where n is the number of items in the list. This is because with each comparison, the algorithm eliminates half of the remaining items, effectively reducing the search space by a factor of 2.\n\nTo be more precise, the time complexity of binary search can be expressed as:\n\n* Best-case: **O(1)** (when the target item is at the middle of the list)\n* Average-case: **O(log n)**\n* Worst-case: **O(log n)** (when the target item is at the beginning or end of the list)\n\n**Space Complexity:**\n\nThe space complexity of binary search is **O(1)**, as it only requires a constant amount of space to store the indices and the target item.\n\n**Why is Binary Search Efficient?**\n\nBinary search is efficient because it:\n\n1. Reduces the search space by half with each comparison\n2. Uses a divide-and-conquer approach to find the target item\n3. Has a low overhead in terms of space complexity\n\nOverall, binary search is a fast and efficient algorithm for searching sorted lists, making it a fundamental component of many data structures and algorithms.",
+        "quality_score": 0.65,
+        "topic_coverage": 0.5,
+        "is_uncertain": false,
+        "latency_ms": 901
+      },
+      "delta_quality": 0.0
+    },
+    {
+      "id": "tech-mk-004",
+      "query": "hash табели објаснување",
+      "language": "mk",
+      "intent": "technical",
+      "rag": {
+        "answer": "Хеш табелите се податочни структури кои нудат многу брзо вметнување и пребарување, блиску до константно време О(1), во идеален случај. Тие се релативно лесни за програмирање, но имаат неколку недостатоци, како што се проблемите со проширување, деградација на перформансите кога табелата е полна, потребата од точна претстава за големината на податоците и неможноста за изминување на податоците во било кој редослед.\n\nХеш табелите се состојат од низа со фиксна големина, каде секој елемент во низата претставува ќелија во хеш табелата. Секој клуч се пресликува во некој индекс во опсегот од 0 до големината на табелата - 1 и се зачувува во соодветната ќелија во хеш табелата. Мапирањето се прави со хеш функција, која во идеален случај треба да биде едноставна за пресметка и треба да овозможи различни клучеви да добиваат различни ќелии.\n\nИзвор: [Извор 1: [PSAA] #07 - Hash tabeli.pdf], [Извор 4: [PSAA] #07 - Hash tabeli.pdf], [Извор 5: PSAA_Auditoriski_08.pdf], [Извор 9: [PSAA] #07 - Hash tabeli.pdf]",
+        "quality_score": 0.5666666666666667,
+        "topic_coverage": 0.3333333333333333,
+        "is_uncertain": false,
+        "latency_ms": 41706
+      },
+      "baseline": {
+        "answer": "Хеш табели (Hash Tables) се еден од основните типови на податочни структури во информатиката. Тие се користат за складирање и брзо пребарување на податоци.\n\n**Што е хеш табела?**\n\nХеш табела е податочна структура која користи хеш функција за да ги мапира клучевите (keys) во индекси на табела. Клучевите се уникални идентификатори за секој елемент во табелата, а хеш функцијата ги пресметува индексите во кои се чуваат елементите.\n\n**Како функционира хеш табела?**\n\nХеш табела функционира на следниот начин:\n\n1. **Хеш функција**: Кога елементот се додава во табелата, хеш функцијата се применува на клучот на елементот. Хеш функцијата пресметува индекс во кој треба да се чува елементот.\n2. **Мапирање**: Елементот се чува во индексот кој е пресметан од хеш функцијата.\n3. **Пребарување**: Кога се бара елемент во табелата, хеш функцијата се применува на клучот на елементот кој се бара. Индексот кој е пресметан од хеш функцијата се користи за да се најде елементот во табелата.\n\n**Предности на хеш табели**\n\nХеш табели имаат неколку предности:\n\n* **Брзо пребарување**: Хеш табели овозможуваат брзо пребарување на елементи, бидејќи хеш функцијата може да пресмета индексот во кој се чува елементот за константно време.\n* **Ефикасно складирање**: Хеш табели можат да складираат голем број на елементи во релативно мал простор.\n\n**Н",
+        "quality_score": 0.7333333333333334,
+        "topic_coverage": 0.6666666666666666,
+        "is_uncertain": false,
+        "latency_ms": 2745
+      },
+      "delta_quality": -0.16666666666666674
+    }
+  ]
+}

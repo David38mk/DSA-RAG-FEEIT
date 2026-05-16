@@ -1,0 +1,442 @@
+{
+  "timestamp": "2026-05-16_204857",
+  "test_set_size": 9,
+  "providers": [
+    {
+      "provider_id": "groq_70b",
+      "label": "Groq / llama-3.3-70b",
+      "n_queries": 9,
+      "avg_quality": 0.5,
+      "avg_latency_ms": 386.6666666666667,
+      "uncertain_count": 0,
+      "per_query": [
+        {
+          "id": "tech-mk-001",
+          "query": "Објасни AVL дрва",
+          "language": "mk",
+          "intent": "technical",
+          "answer": "Error generating response: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kj514kf0f1nay51nxdhz1rc9` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99400, Requested 4840. Please try again in 1h1m3.36s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+          "quality_score": 0.5,
+          "topic_coverage": 0.0,
+          "is_uncertain": false,
+          "latency_ms": 1026
+        },
+        {
+          "id": "tech-mk-002",
+          "query": "Што е временска комплексност?",
+          "language": "mk",
+          "intent": "technical",
+          "answer": "Error generating response: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kj514kf0f1nay51nxdhz1rc9` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99400, Requested 4258. Please try again in 52m40.512s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+          "quality_score": 0.5,
+          "topic_coverage": 0.0,
+          "is_uncertain": false,
+          "latency_ms": 294
+        },
+        {
+          "id": "tech-mk-003",
+          "query": "Објасни quicksort алгоритам",
+          "language": "mk",
+          "intent": "technical",
+          "answer": "Error generating response: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kj514kf0f1nay51nxdhz1rc9` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99400, Requested 4067. Please try again in 49m55.488s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+          "quality_score": 0.5,
+          "topic_coverage": 0.0,
+          "is_uncertain": false,
+          "latency_ms": 251
+        },
+        {
+          "id": "tech-en-001",
+          "query": "Explain binary search trees",
+          "language": "en",
+          "intent": "technical",
+          "answer": "Error generating response: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kj514kf0f1nay51nxdhz1rc9` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99399, Requested 3230. Please try again in 37m51.456s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+          "quality_score": 0.5,
+          "topic_coverage": 0.0,
+          "is_uncertain": false,
+          "latency_ms": 246
+        },
+        {
+          "id": "tech-en-002",
+          "query": "What is Big O notation?",
+          "language": "en",
+          "intent": "technical",
+          "answer": "Error generating response: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kj514kf0f1nay51nxdhz1rc9` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99866, Requested 3871. Please try again in 53m48.768s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+          "quality_score": 0.5,
+          "topic_coverage": 0.0,
+          "is_uncertain": false,
+          "latency_ms": 604
+        },
+        {
+          "id": "admin-mk-001",
+          "query": "Колку поени треба за полагање?",
+          "language": "mk",
+          "intent": "administrative",
+          "answer": "Error generating response: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kj514kf0f1nay51nxdhz1rc9` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99866, Requested 2582. Please try again in 35m15.071999999s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+          "quality_score": 0.5,
+          "topic_coverage": 0.0,
+          "is_uncertain": false,
+          "latency_ms": 361
+        },
+        {
+          "id": "faq-mk-001",
+          "query": "Дали треба да носам лаптоп на лаб?",
+          "language": "mk",
+          "intent": "faq",
+          "answer": "Error generating response: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kj514kf0f1nay51nxdhz1rc9` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99866, Requested 2746. Please try again in 37m36.768s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+          "quality_score": 0.5,
+          "topic_coverage": 0.0,
+          "is_uncertain": false,
+          "latency_ms": 236
+        },
+        {
+          "id": "tech-en-003",
+          "query": "binary search complexity",
+          "language": "en",
+          "intent": "technical",
+          "answer": "Error generating response: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kj514kf0f1nay51nxdhz1rc9` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99865, Requested 4053. Please try again in 56m25.152s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+          "quality_score": 0.5,
+          "topic_coverage": 0.0,
+          "is_uncertain": false,
+          "latency_ms": 231
+        },
+        {
+          "id": "tech-mk-004",
+          "query": "hash табели објаснување",
+          "language": "mk",
+          "intent": "technical",
+          "answer": "Error generating response: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kj514kf0f1nay51nxdhz1rc9` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99865, Requested 3134. Please try again in 43m11.136s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}",
+          "quality_score": 0.5,
+          "topic_coverage": 0.0,
+          "is_uncertain": false,
+          "latency_ms": 231
+        }
+      ]
+    },
+    {
+      "provider_id": "groq_8b",
+      "label": "Groq / llama-3.1-8b-instant",
+      "n_queries": 9,
+      "avg_quality": 0.6240740740740741,
+      "avg_latency_ms": 30060.0,
+      "uncertain_count": 0,
+      "per_query": [
+        {
+          "id": "tech-mk-001",
+          "query": "Објасни AVL дрва",
+          "language": "mk",
+          "intent": "technical",
+          "answer": "AVL дрва се тип на балансирани пребарувачки дрва. Тие се наречени по своите творци, Аделсон-Велски и Ландис. AVL дрва се дефинирани со следниве својства:\n\n* Секој јазол во AVL дрво има висина, која е чуваена во јазолот.\n* Висината на празно дрво е -1.\n* Висината на секој јазол е еднаква на максимум 1 повеќе или 1 помалку од висините на неговите деца.\n* Трите основни операции (пребарување, вметнување и бришење) се извршуваат за време O(log n).\n\nAVL дрва се користат за да се гарантира дека дрвото останува балансирано, што значи дека висината на секој јазол е еднаква на максимум 1 повеќе или 1 помалку од висините на неговите деца. Ова е постигнато со користење на ротации, кои се извршуваат кога е потребно да се балансира дрвото.\n\nИзвор: [PSAA] #06 - AVL_i_Red_Black_Drva (optional).pdf",
+          "quality_score": 0.5666666666666667,
+          "topic_coverage": 0.3333333333333333,
+          "is_uncertain": false,
+          "latency_ms": 1636
+        },
+        {
+          "id": "tech-mk-002",
+          "query": "Што е временска комплексност?",
+          "language": "mk",
+          "intent": "technical",
+          "answer": "Временска комплексност е мерка за трошењето на време на извршување на алгоритмот, која се изразува како функција f(n) од големината n на влезот. Таа го опишува времето на извршување на алгоритмот во функција од големината на влезот.\n\nИзвор: [Извор 3: [PSAA] #02 - Analiza na algoritmi.pdf]\n\nЗабелешка: Следниот дел не е директно пронајден во материјалите, туку е од општо DSA познавање.",
+          "quality_score": 0.6666666666666667,
+          "topic_coverage": 0.3333333333333333,
+          "is_uncertain": false,
+          "latency_ms": 34204
+        },
+        {
+          "id": "tech-mk-003",
+          "query": "Објасни quicksort алгоритам",
+          "language": "mk",
+          "intent": "technical",
+          "answer": "QuickSort е алгоритам за сортирање на податочните структури. Во контекстот, QuickSort е објаснет во два дела: во [Извор 2: Data-Structures-and-Algorithms-in-Java-6th-Edition.pdf] и во [Извор 5: Data-Structures-and-Algorithms-in-Java-6th-Edition.pdf].\n\nВо [Извор 2: Data-Structures-and-Algorithms-in-Java-6th-Edition.pdf], QuickSort е објаснет како алгоритам за сортирање на секвенција S, која се имплементира како ред. Алгоритмот бира првиот елемент од редот како пивот и го дели редот на три реда: L, E и G, според вредностите на елементите во однос на пивотот. Тогаш, алгоритмот се применува на редовите L и G, а елементите од редовите L, E и G се вртат назад во редот S.\n\nВо [Извор 5: Data-Structures-and-Algorithms-in-Java-6th-Edition.pdf], QuickSort е објаснет како алгоритам за сортирање на масив S, кој се имплементира како ин-место алгоритам. Алгоритмот користи елементи од масивот S за да го дели масивот на две подмасиви: лев и десен, според вредностите на елементите во однос на пивотот. Тогаш, алгоритмот се применува на лев и десен подмасив и елементите се вртат назад во масивот S.\n\nЗабелешка: Следниот дел не е директно пронајден во материјалите, туку е од општо DSA познавање. QuickSort е еден од најчесто користените алгоритми за сортирање, бидејќи има просечна временска сложеност од O(n log n) и е лесен за имплемент",
+          "quality_score": 0.4,
+          "topic_coverage": 0.0,
+          "is_uncertain": false,
+          "latency_ms": 38601
+        },
+        {
+          "id": "tech-en-001",
+          "query": "Explain binary search trees",
+          "language": "en",
+          "intent": "technical",
+          "answer": "Direct answer:\nA binary search tree (BST) is a type of binary tree data structure that keeps nodes ordered in such a way that for any node, all elements in its left subtree are less than the node, and all elements in its right subtree are greater than the node.\n\nExplanation:\nA binary search tree is a proper binary tree where each internal position p stores a key-value pair (k,v) such that keys stored in the left subtree of p are less than k, and keys stored in the right subtree of p are greater than k. This property allows for efficient searching, inserting, and deleting of elements in the tree.\n\nExample:\nConsider a binary search tree with the following nodes:\n- Root node: 50\n- Left child of root: 20\n- Right child of root: 80\n- Left child of 20: 10\n- Right child of 20: 30\n- Left child of 80: 70\n- Right child of 80: 90\n\nIn this tree, all elements in the left subtree of 50 (i.e., 20, 10, and 30) are less than 50, and all elements in the right subtree of 50 (i.e., 80, 70, and 90) are greater than 50.\n\nSource:\nThe information provided is based on the course materials, specifically from Chapter 8 and Chapter 11 of the Data Structures and Algorithms in Java 6th Edition textbook.",
+          "quality_score": 0.8999999999999999,
+          "topic_coverage": 1.0,
+          "is_uncertain": false,
+          "latency_ms": 36029
+        },
+        {
+          "id": "tech-en-002",
+          "query": "What is Big O notation?",
+          "language": "en",
+          "intent": "technical",
+          "answer": "Direct answer:\nThe Big O notation is a mathematical notation that describes the upper bound of an algorithm's complexity, representing the maximum amount of time or space an algorithm requires as the input size grows.\n\nExplanation:\nThe Big O notation is used to analyze the growth rate of an algorithm's running time or space usage, ignoring constant factors and lower-order terms. It provides an asymptotic way of saying that a function is \"less than or equal to\" another function, up to a constant factor.\n\nExample:\nFor example, if we have an algorithm with a running time of 8n + 5, we can say that it is O(n), because 8n + 5 is less than or equal to cn for some constant c and sufficiently large n.\n\nSource:\nThis information comes from the course materials, specifically from Chapter 4. Algorithm Analysis, Section 4.3. Asymptotic Analysis, and Section 4.3.1. The \"Big-Oh\" Notation.",
+          "quality_score": 0.8999999999999999,
+          "topic_coverage": 1.0,
+          "is_uncertain": false,
+          "latency_ms": 39514
+        },
+        {
+          "id": "admin-mk-001",
+          "query": "Колку поени треба за полагање?",
+          "language": "mk",
+          "intent": "administrative",
+          "answer": "Директен одговор: 70% од поените доаѓаат од задачите додека останатите 30% доаѓаат од теоријата.\n\nОбјаснување: Према информацијата од контекстот, професорот ги објаснила процентуалните соодноси на поените за задачите и теоријата. Иако не е наведено колку поени треба за полагање, можеме да заклучиме дека 70% од поените се засновани на задачите, додека останатите 30% се засновани на теоријата.\n\nПример: Ако има вкупно 100 поени, тогаш задачите би носеле 70 поени (70% од 100), додека теоријата би носела 30 поени (30% од 100).\n\nИзвор: [Извор 1: Често поставувани прашања.docx]\n\nЗабелешка: Следниот дел не е директно пронајден во материјалите, туку е од општо DSA познавање.",
+          "quality_score": 0.4,
+          "topic_coverage": 0.0,
+          "is_uncertain": false,
+          "latency_ms": 23176
+        },
+        {
+          "id": "faq-mk-001",
+          "query": "Дали треба да носам лаптоп на лаб?",
+          "language": "mk",
+          "intent": "faq",
+          "answer": "Директен одговор: Да, треба да носиш лаптоп на лаб.\n\nОбјаснување: Во еден од прашањата и одговорите во контекстот, професорот споменува дека елаборатот за лабораториската вежба ќе го добиете на почетокот од вежбата. Ова значи дека веројатно ќе бидете потребни да го користите лаптопот за да го видите елаборатот и да ги извршите задачите.\n\nПример: Ако професорот го даде елаборатот на лаптопот, тогаш треба да го носиш лаптопот за да го видиш елаборатот и да ги извршите задачите.\n\nИзвор: [Извор 3: Често поставувани прашања.docx]\n\nЗабелешка: Следниот дел не е директно пронајден во материјалите, туку е од општо DSA познавање.",
+          "quality_score": 0.65,
+          "topic_coverage": 0.5,
+          "is_uncertain": false,
+          "latency_ms": 25015
+        },
+        {
+          "id": "tech-en-003",
+          "query": "binary search complexity",
+          "language": "en",
+          "intent": "technical",
+          "answer": "Direct answer: The binary search algorithm runs in O(logn) time.\n\nExplanation: According to the provided context, in Section 5.1, it is mentioned that the binary search algorithm runs in O(logn) time, which is a significant improvement compared to the sequential search algorithm that runs in O(n) time.\n\nExample: To illustrate this, if we have an array of 1 billion elements (n = 1 billion), the logarithm of this number (logn) is approximately 30. This means that the binary search algorithm will find the target value in at most 30 comparisons, whereas the sequential search algorithm would require 1 billion comparisons.\n\nSource: [Извор 1: Data-Structures-and-Algorithms-in-Java-6th-Edition.pdf], Section 5.1.",
+          "quality_score": 0.4,
+          "topic_coverage": 0.0,
+          "is_uncertain": false,
+          "latency_ms": 42154
+        },
+        {
+          "id": "tech-mk-004",
+          "query": "hash табели објаснување",
+          "language": "mk",
+          "intent": "technical",
+          "answer": "Хеш табели се податочни структури кои нудат многу брзо вметнување и пребарување, блиску до константно време О(1), во идеален случај. Тие се релативно лесни за програмирање, но имаат неколку недостатоци, како што е проблематичноста на низите за проширување и можната деградација на перформансите кога табелата станува полна.\n\nХеш табелите се базирани на хеш функција, која претвора даден клуч во индекс од хеш табелата. Идеалната структура на хеш табела е едноставна низа со фиксна големина, со фиксен број на ќелии, односно локации за зачувување на податоци. Клучот (key) претставува податочен елемент кој се користи за пребарување, а секој клуч се пресликува во некој индекс во опсегот од 0 до tableSize - 1 и се зачувува во соодветната ќелија во хеш табелата.\n\nХеш функцијата треба да биде едноставна за пресметување и треба да овозможи различни клучеви да добиваат различни ќелии. Во идеален случај, хеш функцијата треба да биде рамномерно распределува, така што различните клучеви да добиваат различни ќелии.\n\nИзвор: [PSAA] #07 - Hash tabeli.pdf, стр. 2-4, [PSAA_Auditoriski_08.pdf], стр. 4-5.",
+          "quality_score": 0.7333333333333334,
+          "topic_coverage": 0.6666666666666666,
+          "is_uncertain": false,
+          "latency_ms": 30211
+        }
+      ]
+    },
+    {
+      "provider_id": "gemini_flash",
+      "label": "Gemini / gemini-2.0-flash",
+      "n_queries": 9,
+      "avg_quality": 0.4185185185185185,
+      "avg_latency_ms": 3408.222222222222,
+      "uncertain_count": 0,
+      "per_query": [
+        {
+          "id": "tech-mk-001",
+          "query": "Објасни AVL дрва",
+          "language": "mk",
+          "intent": "technical",
+          "answer": "Error generating response: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\nPlease retry in 37.728671399s. [links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_input_token_count\"\n  quota_id: \"GenerateContentInputTokensPerModelPerMinute-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.0-flash\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n}\nviolations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.0-flash\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n}\nviolations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\n  quota_id: \"GenerateRequestsPerDayPerProjectPerModel-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.0-flash\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n}\n, retry_delay {\n  seconds: 37\n}\n]",
+          "quality_score": 0.4,
+          "topic_coverage": 0.0,
+          "is_uncertain": false,
+          "latency_ms": 713
+        },
+        {
+          "id": "tech-mk-002",
+          "query": "Што е временска комплексност?",
+          "language": "mk",
+          "intent": "technical",
+          "answer": "Error generating response: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\nPlease retry in 37.458357666s. [links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_input_token_count\"\n  quota_id: \"GenerateContentInputTokensPerModelPerMinute-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.0-flash\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n}\nviolations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.0-flash\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n}\nviolations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\n  quota_id: \"GenerateRequestsPerDayPerProjectPerModel-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.0-flash\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n}\n, retry_delay {\n  seconds: 37\n}\n]",
+          "quality_score": 0.4,
+          "topic_coverage": 0.0,
+          "is_uncertain": false,
+          "latency_ms": 240
+        },
+        {
+          "id": "tech-mk-003",
+          "query": "Објасни quicksort алгоритам",
+          "language": "mk",
+          "intent": "technical",
+          "answer": "Error generating response: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\nPlease retry in 37.212908244s. [links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_input_token_count\"\n  quota_id: \"GenerateContentInputTokensPerModelPerMinute-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.0-flash\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n}\nviolations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.0-flash\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n}\nviolations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\n  quota_id: \"GenerateRequestsPerDayPerProjectPerModel-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.0-flash\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n}\n, retry_delay {\n  seconds: 37\n}\n]",
+          "quality_score": 0.4,
+          "topic_coverage": 0.0,
+          "is_uncertain": false,
+          "latency_ms": 195
+        },
+        {
+          "id": "tech-en-001",
+          "query": "Explain binary search trees",
+          "language": "en",
+          "intent": "technical",
+          "answer": "Error generating response: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\nPlease retry in 36.974768794s. [links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\n  quota_id: \"GenerateRequestsPerDayPerProjectPerModel-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.0-flash\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n}\nviolations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.0-flash\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n}\nviolations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_input_token_count\"\n  quota_id: \"GenerateContentInputTokensPerModelPerMinute-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.0-flash\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n}\n, retry_delay {\n  seconds: 36\n}\n]",
+          "quality_score": 0.4,
+          "topic_coverage": 0.0,
+          "is_uncertain": false,
+          "latency_ms": 238
+        },
+        {
+          "id": "tech-en-002",
+          "query": "What is Big O notation?",
+          "language": "en",
+          "intent": "technical",
+          "answer": "Error generating response: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\nPlease retry in 9.724880687s. [links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\n  quota_id: \"GenerateRequestsPerDayPerProjectPerModel-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.0-flash\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n}\nviolations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.0-flash\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n}\nviolations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_input_token_count\"\n  quota_id: \"GenerateContentInputTokensPerModelPerMinute-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.0-flash\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n}\n, retry_delay {\n  seconds: 9\n}\n]",
+          "quality_score": 0.4,
+          "topic_coverage": 0.0,
+          "is_uncertain": false,
+          "latency_ms": 27253
+        },
+        {
+          "id": "admin-mk-001",
+          "query": "Колку поени треба за полагање?",
+          "language": "mk",
+          "intent": "administrative",
+          "answer": "Error generating response: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\nPlease retry in 9.263748881s. [links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_input_token_count\"\n  quota_id: \"GenerateContentInputTokensPerModelPerMinute-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.0-flash\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n}\nviolations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.0-flash\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n}\nviolations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\n  quota_id: \"GenerateRequestsPerDayPerProjectPerModel-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.0-flash\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n}\n, retry_delay {\n  seconds: 9\n}\n]",
+          "quality_score": 0.4,
+          "topic_coverage": 0.0,
+          "is_uncertain": false,
+          "latency_ms": 463
+        },
+        {
+          "id": "faq-mk-001",
+          "query": "Дали треба да носам лаптоп на лаб?",
+          "language": "mk",
+          "intent": "faq",
+          "answer": "Error generating response: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\nPlease retry in 8.960611994s. [links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_input_token_count\"\n  quota_id: \"GenerateContentInputTokensPerModelPerMinute-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.0-flash\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n}\nviolations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.0-flash\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n}\nviolations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\n  quota_id: \"GenerateRequestsPerDayPerProjectPerModel-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.0-flash\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n}\n, retry_delay {\n  seconds: 8\n}\n]",
+          "quality_score": 0.4,
+          "topic_coverage": 0.0,
+          "is_uncertain": false,
+          "latency_ms": 299
+        },
+        {
+          "id": "tech-en-003",
+          "query": "binary search complexity",
+          "language": "en",
+          "intent": "technical",
+          "answer": "Error generating response: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\nPlease retry in 8.657015045s. [links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_input_token_count\"\n  quota_id: \"GenerateContentInputTokensPerModelPerMinute-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.0-flash\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n}\nviolations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.0-flash\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n}\nviolations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\n  quota_id: \"GenerateRequestsPerDayPerProjectPerModel-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.0-flash\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n}\n, retry_delay {\n  seconds: 8\n}\n]",
+          "quality_score": 0.4,
+          "topic_coverage": 0.0,
+          "is_uncertain": false,
+          "latency_ms": 440
+        },
+        {
+          "id": "tech-mk-004",
+          "query": "hash табели објаснување",
+          "language": "mk",
+          "intent": "technical",
+          "answer": "Error generating response: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\nPlease retry in 7.822457428s. [links {\n  description: \"Learn more about Gemini API quotas\"\n  url: \"https://ai.google.dev/gemini-api/docs/rate-limits\"\n}\n, violations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\n  quota_id: \"GenerateRequestsPerDayPerProjectPerModel-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.0-flash\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n}\nviolations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_requests\"\n  quota_id: \"GenerateRequestsPerMinutePerProjectPerModel-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.0-flash\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n}\nviolations {\n  quota_metric: \"generativelanguage.googleapis.com/generate_content_free_tier_input_token_count\"\n  quota_id: \"GenerateContentInputTokensPerModelPerMinute-FreeTier\"\n  quota_dimensions {\n    key: \"model\"\n    value: \"gemini-2.0-flash\"\n  }\n  quota_dimensions {\n    key: \"location\"\n    value: \"global\"\n  }\n}\n, retry_delay {\n  seconds: 7\n}\n]",
+          "quality_score": 0.5666666666666667,
+          "topic_coverage": 0.3333333333333333,
+          "is_uncertain": false,
+          "latency_ms": 833
+        }
+      ]
+    },
+    {
+      "provider_id": "openrouter_mistral",
+      "label": "OpenRouter / mistral-7b-instruct",
+      "n_queries": 9,
+      "avg_quality": 0.5,
+      "avg_latency_ms": 598.1111111111111,
+      "uncertain_count": 0,
+      "per_query": [
+        {
+          "id": "tech-mk-001",
+          "query": "Објасни AVL дрва",
+          "language": "mk",
+          "intent": "technical",
+          "answer": "Error generating response: Error code: 404 - {'error': {'message': 'No endpoints found for mistralai/mistral-7b-instruct:free.', 'code': 404}, 'user_id': 'user_3Dolcuf0vvWXAKl7oWbn9x17yFt'}",
+          "quality_score": 0.5,
+          "topic_coverage": 0.0,
+          "is_uncertain": false,
+          "latency_ms": 2804
+        },
+        {
+          "id": "tech-mk-002",
+          "query": "Што е временска комплексност?",
+          "language": "mk",
+          "intent": "technical",
+          "answer": "Error generating response: Error code: 404 - {'error': {'message': 'No endpoints found for mistralai/mistral-7b-instruct:free.', 'code': 404}, 'user_id': 'user_3Dolcuf0vvWXAKl7oWbn9x17yFt'}",
+          "quality_score": 0.5,
+          "topic_coverage": 0.0,
+          "is_uncertain": false,
+          "latency_ms": 326
+        },
+        {
+          "id": "tech-mk-003",
+          "query": "Објасни quicksort алгоритам",
+          "language": "mk",
+          "intent": "technical",
+          "answer": "Error generating response: Error code: 404 - {'error': {'message': 'No endpoints found for mistralai/mistral-7b-instruct:free.', 'code': 404}, 'user_id': 'user_3Dolcuf0vvWXAKl7oWbn9x17yFt'}",
+          "quality_score": 0.5,
+          "topic_coverage": 0.0,
+          "is_uncertain": false,
+          "latency_ms": 306
+        },
+        {
+          "id": "tech-en-001",
+          "query": "Explain binary search trees",
+          "language": "en",
+          "intent": "technical",
+          "answer": "Error generating response: Error code: 404 - {'error': {'message': 'No endpoints found for mistralai/mistral-7b-instruct:free.', 'code': 404}, 'user_id': 'user_3Dolcuf0vvWXAKl7oWbn9x17yFt'}",
+          "quality_score": 0.5,
+          "topic_coverage": 0.0,
+          "is_uncertain": false,
+          "latency_ms": 248
+        },
+        {
+          "id": "tech-en-002",
+          "query": "What is Big O notation?",
+          "language": "en",
+          "intent": "technical",
+          "answer": "Error generating response: Error code: 404 - {'error': {'message': 'No endpoints found for mistralai/mistral-7b-instruct:free.', 'code': 404}, 'user_id': 'user_3Dolcuf0vvWXAKl7oWbn9x17yFt'}",
+          "quality_score": 0.5,
+          "topic_coverage": 0.0,
+          "is_uncertain": false,
+          "latency_ms": 602
+        },
+        {
+          "id": "admin-mk-001",
+          "query": "Колку поени треба за полагање?",
+          "language": "mk",
+          "intent": "administrative",
+          "answer": "Error generating response: Error code: 404 - {'error': {'message': 'No endpoints found for mistralai/mistral-7b-instruct:free.', 'code': 404}, 'user_id': 'user_3Dolcuf0vvWXAKl7oWbn9x17yFt'}",
+          "quality_score": 0.5,
+          "topic_coverage": 0.0,
+          "is_uncertain": false,
+          "latency_ms": 239
+        },
+        {
+          "id": "faq-mk-001",
+          "query": "Дали треба да носам лаптоп на лаб?",
+          "language": "mk",
+          "intent": "faq",
+          "answer": "Error generating response: Error code: 404 - {'error': {'message': 'No endpoints found for mistralai/mistral-7b-instruct:free.', 'code': 404}, 'user_id': 'user_3Dolcuf0vvWXAKl7oWbn9x17yFt'}",
+          "quality_score": 0.5,
+          "topic_coverage": 0.0,
+          "is_uncertain": false,
+          "latency_ms": 344
+        },
+        {
+          "id": "tech-en-003",
+          "query": "binary search complexity",
+          "language": "en",
+          "intent": "technical",
+          "answer": "Error generating response: Error code: 404 - {'error': {'message': 'No endpoints found for mistralai/mistral-7b-instruct:free.', 'code': 404}, 'user_id': 'user_3Dolcuf0vvWXAKl7oWbn9x17yFt'}",
+          "quality_score": 0.5,
+          "topic_coverage": 0.0,
+          "is_uncertain": false,
+          "latency_ms": 241
+        },
+        {
+          "id": "tech-mk-004",
+          "query": "hash табели објаснување",
+          "language": "mk",
+          "intent": "technical",
+          "answer": "Error generating response: Error code: 404 - {'error': {'message': 'No endpoints found for mistralai/mistral-7b-instruct:free.', 'code': 404}, 'user_id': 'user_3Dolcuf0vvWXAKl7oWbn9x17yFt'}",
+          "quality_score": 0.5,
+          "topic_coverage": 0.0,
+          "is_uncertain": false,
+          "latency_ms": 273
+        }
+      ]
+    }
+  ]
+}

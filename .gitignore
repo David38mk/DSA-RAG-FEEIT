@@ -1,47 +1,92 @@
-﻿# Virtual Environment
-venv/
-env/
-ENV/
-.venv/
-
+# ----------------------------------------------------------------------
 # Python
+# ----------------------------------------------------------------------
 __pycache__/
 *.py[cod]
 *$py.class
 *.so
 .Python
 
-# Data & Models
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+*.egg
+.eggs/
+
+# ----------------------------------------------------------------------
+# Virtual environments
+# ----------------------------------------------------------------------
+venv/
+env/
+ENV/
+.venv/
+
+# ----------------------------------------------------------------------
+# Type checkers, linters, test runners
+# ----------------------------------------------------------------------
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.pyre/
+.pytype/
+.coverage
+.coverage.*
+htmlcov/
+
+# ----------------------------------------------------------------------
+# Jupyter
+# ----------------------------------------------------------------------
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# ----------------------------------------------------------------------
+# IDE / editor
+# ----------------------------------------------------------------------
+.vscode/
+.idea/
+*.iml
+*.swp
+*.swo
+
+# ----------------------------------------------------------------------
+# OS metadata
+# ----------------------------------------------------------------------
+.DS_Store
+Thumbs.db
+
+# ----------------------------------------------------------------------
+# Project data (large, regenerable, or sensitive)
+# ----------------------------------------------------------------------
+# Vector store, raw corpus, runtime logs — all rebuildable from sources
 data/
+
+# Binary model artifacts
 *.pkl
 *.bin
 *.pt
 *.pth
 *.h5
 
-# ChromaDB
+# ChromaDB / SQLite logs
 chroma_db/
 *.db
 *.sqlite3
 
-# IDE
-.vscode/
-.idea/
-*.swp
-*.swo
-
-# OS
-.DS_Store
-Thumbs.db
-
-# Environment variables
-.env
-.env.local
-
-# Jupyter
-.ipynb_checkpoints/
-*.ipynb_checkpoints
-
-# Logs
+# Plaintext logs
 logs/
 *.log
+
+# ----------------------------------------------------------------------
+# Secrets
+# ----------------------------------------------------------------------
+.env
+.env.local
+.env.*.local
+*.key
+*.pem
+
+# ----------------------------------------------------------------------
+# Claude Code working state (per-project memory, not project content)
+# ----------------------------------------------------------------------
+.claude/

@@ -20,7 +20,7 @@
 1. **`groq_generator.py`** - Fast Groq API integration (500+ tokens/sec)
 2. **`streamlit_app.py`** - Beautiful chat UI (recommended)
 3. **`gradio_app.py`** - Alternative chat UI (easier sharing)
-4. **`PHASE5_README.md`** - This guide
+4. **`11_phase5_language_detection.md`** - This guide
 
 ---
 

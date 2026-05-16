@@ -9,8 +9,12 @@ Metrics:
 For DSA-RAG-FEEIT thesis project
 """
 
-from typing import List, Dict, Tuple
+import json
+from pathlib import Path
+from typing import List, Dict
 import numpy as np
+
+DEFAULT_TEST_SET_PATH = Path(__file__).resolve().parents[2] / "evaluation" / "datasets" / "routing_test_set.json"
 
 
 class EvaluationFramework:
@@ -19,87 +23,16 @@ class EvaluationFramework:
     def __init__(self):
         self.results = []
     
-    def create_test_set(self) -> List[Dict]:
+    def create_test_set(self, path: Path = DEFAULT_TEST_SET_PATH) -> List[Dict]:
         """
-        Create test queries with ground truth.
-        
-        Returns:
-            List of test cases with queries and expected info
+        Load test queries with ground truth from JSON.
+
+        The JSON file is the source of truth (evaluation/datasets/routing_test_set.json).
+        Returns the test_cases list directly.
         """
-        test_set = [
-            # Technical queries - Macedonian
-            {
-                "query": "Објасни AVL дрва",
-                "intent": "technical",
-                "language": "mk",
-                "expected_sources": ["AVL", "дрва", "балансирано"],
-                "expected_topics": ["ротација", "баланс", "височина"]
-            },
-            {
-                "query": "Што е временска комплексност?",
-                "intent": "technical",
-                "language": "mk",
-                "expected_sources": ["комплексност", "Big O"],
-                "expected_topics": ["O(n)", "време", "анализа"]
-            },
-            {
-                "query": "Објасни quicksort алгоритам",
-                "intent": "technical",
-                "language": "mk",
-                "expected_sources": ["quicksort", "sorting"],
-                "expected_topics": ["pivot", "партиција", "рекурзија"]
-            },
-            
-            # Technical queries - English
-            {
-                "query": "Explain binary search trees",
-                "intent": "technical",
-                "language": "en",
-                "expected_sources": ["binary", "search", "tree", "BST"],
-                "expected_topics": ["node", "left", "right", "search"]
-            },
-            {
-                "query": "What is Big O notation?",
-                "intent": "technical",
-                "language": "en",
-                "expected_sources": ["complexity", "Big O", "notation"],
-                "expected_topics": ["time", "O(n)", "analysis"]
-            },
-            
-            # Administrative queries
-            {
-                "query": "Колку поени треба за полагање?",
-                "intent": "administrative",
-                "language": "mk",
-                "expected_sources": ["поени", "полагање", "услов"],
-                "expected_topics": ["50", "испит", "положен"]
-            },
-            {
-                "query": "Дали треба да носам лаптоп на лаб?",
-                "intent": "faq",
-                "language": "mk",
-                "expected_sources": ["лаб", "вежби"],
-                "expected_topics": ["лаптоп", "компјутер"]
-            },
-            
-            # Cross-lingual queries
-            {
-                "query": "binary search complexity",
-                "intent": "technical",
-                "language": "en",
-                "expected_sources": ["binary", "search", "complexity"],
-                "expected_topics": ["O(log n)", "logarithmic"]
-            },
-            {
-                "query": "hash табели објаснување",
-                "intent": "technical",
-                "language": "mk",
-                "expected_sources": ["hash", "табела"],
-                "expected_topics": ["collision", "функција", "key"]
-            },
-        ]
-        
-        return test_set
+        with open(path, "r", encoding="utf-8") as f:
+            data = json.load(f)
+        return data["test_cases"]
     
     def evaluate_retrieval(self, 
                           query: str,
@@ -293,7 +226,7 @@ class EvaluationFramework:
             print(f"\n[{i}/{len(test_set)}] Testing: {query}")
             
             # Run RAG query
-            response = rag_pipeline.query(query, n_results=5)
+            response = rag_pipeline.query(query, n_results=7)
             
             # Evaluate
             eval_result = self.evaluate_end_to_end(query, response, test_case)

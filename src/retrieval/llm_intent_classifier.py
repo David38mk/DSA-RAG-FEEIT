@@ -32,9 +32,12 @@ class LLMIntentClassifier:
     def __init__(self, model_name: str = "llama-3.3-70b-versatile", api_key: str = None):
         """
         Initialize LLM classifier.
-        
+
         Args:
-            model_name: Groq model to use
+            model_name: Groq model to use. Default is the small/fast 8B model —
+                a binary intent classification doesn't need a 70B model, and
+                using the same heavyweight model as the generator doubles the
+                per-query 70B call count, which hits free-tier rate limits hard.
             api_key: Groq API key (or from GROQ_API_KEY env)
         """
         self.model_name = model_name

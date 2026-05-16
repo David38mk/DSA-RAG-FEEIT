@@ -306,9 +306,12 @@ class HybridSmartRetriever:
                     {"is_admin": "True"}
                 ]
             }
-            results = self.vsm.search(query, n_results, filter_metadata=filter_dict)
+            # FAQ/admin chunks are short (~150-300 chars vs ~1500 for lecture slides)
+            # so fetching more is cheap token-wise and improves recall on the 41-entry FAQ
+            support_n = min(n_results * 2, 20)
+            results = self.vsm.search(query, support_n, filter_metadata=filter_dict)
             strategy = "Support search (FAQ + Admin)"
-            
+
         elif intent == QueryIntent.TECHNICAL:
             filter_dict = {
                 "doc_type": {
@@ -347,7 +350,7 @@ class HybridSmartRetriever:
             
             if intent == QueryIntent.SUPPORT:
                 if metadata.get("is_faq") == "True" or metadata.get("is_admin") == "True":
-                    metadata_score += 0.3
+                    metadata_score += 0.5
             elif intent == QueryIntent.TECHNICAL:
                 if metadata.get("doc_type") in ["lecture_slides", "supplementary_slides", "textbook"]:
                     metadata_score += 0.2
